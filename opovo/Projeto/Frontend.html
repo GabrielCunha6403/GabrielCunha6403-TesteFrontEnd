@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto</title>
+    <link rel="stylesheet" href="Frontend.css">
+</head>
+<body>
+    <div class="escopo">
+        <div class="escopoLeft">
+            <a class="title1" id="btnVoltar"href="" style="width: 78px;">&#8592 Voltar</a>
+            <label class="title2" style="padding-top: 50px;">VAGAS</label>
+            <label class="title3" style="padding-top: 35px;">CONSULTOR DE NEGÓCIOS - VENDAS PUBLICIDADE</label>
+            <label class="title1" style="padding-top: 30px;">Requisitos</label>
+            <label class="title4" style="padding-top: 10px;">Graduação em Marketing ou Publicidade e Propaganda. Experiência com Vendas. Conhecimentos de gestão de indicadores, negociação e informática</label>
+            <label class="title1" style="padding-top: 30px;">Atividades</label>
+            <label class="title4" style="padding-top: 10px;">Planejamento de vendas, visitas a clientes, desenvolvimento de propostas comerciais e plano de mídias, acompanhamento de indicadores e elaboração de orçamentos.</label>
+            <label class="title1" style="padding-top: 30px;">Perfil do candidato</label>
+            <label class="title4" style="padding-top: 10px;">Comunicativo, negociador, ágil e responsável.</label>
+            <label class="title1" style="padding-top: 30px;">Horário de trabalho</label>
+                <label class="title4" style="padding-top: 10px; padding-bottom: 30px;">8 - 18h</label>
+            <div class="moldura">
+                <div class="credenciais">
+                <form action="#" method="post">
+                    <div style="padding-left: 15px; padding-top: 20px; display: flex; flex-direction: column;">
+                        <label class="title5" style="padding-bottom: 20px; width: 422px;">Envie seu currículo</label>
+                            <div class="credencial">
+                                <label class="title1" style="margin-bottom: 10px;">Nome</label>
+                                <input class="input1" type="text" style="width: 422px; margin-bottom: 10px;" required>
+                            </div>
+                            <div class="credencial">
+                                <label class="title1" style="margin-bottom: 10px;">E-mail</label>
+                                <input class="input1" type="email" style="width: 422px; margin-bottom: 10px;" required>
+                            </div>
+                            <div class="credencial">
+                                <label class="title1" style="margin-bottom: 10px;">Cep</label>
+                                <input class="input1" id="cep" type="text" style="width: 422px; margin-bottom: 10px;" required>
+                            </div>
+                            <div class="credencial">
+                                <label class="title1" style="margin-bottom: 10px;">Endereço</label>
+                                <input class="input1" type="text" style="width: 422px; margin-bottom: 10px;" required>
+                            </div>
+                            <div style="display: flex; flex-direction: row;">
+                                <div class="credencial">
+                                    <label class="title1" style="margin-bottom: 10px;">Número</label>
+                                    <input class="input1" id="numero" type="text" style="width: 173px; margin-bottom: 10px;" required>
+                                </div>
+                                <div class="credencial" style="padding-left: 15px;">
+                                    <label class="title1" style="margin-bottom: 10px;">Bairro</label>
+                                    <input class="input1" type="text" style="width: 230px; margin-bottom: 10px;" required>
+                                </div>
+                            </div>    
+                            <div style="display: flex; flex-direction: row;">
+                                <div class="credencial">
+                                    <label class="title1" style="margin-bottom: 10px;">Cidade</label>
+                                    <input class="input1" type="text" style="width: 173px; margin-bottom: 10px;" required>
+                                </div>
+                                <div class="credencial" style="padding-left: 15px;">
+                                    <label class="title1" style="margin-bottom: 10px;">Estado</label>
+                                    <input class="input1" type="text" style="width: 230px; margin-bottom: 10px;" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="credencial" style="padding-left: 15px;">
+                            <label class="title1" style="margin-bottom: 12px;">Currículo</label>
+                            <input type="file" id="iptFile" accept=".pdf, .doc" >
+                            <div style="display: flex; flex-direction: row;">
+                                <div style="display: flex; flex-direction: column;">
+                                    <input type="button" id="btnFile" value="Anexar currículo" onclick="upload">
+                                    <span id="span">Arquivo superior à 10mb</span>
+                                </div>
+                                <label class="title6">Todos os campos são obrigatórios
+                                    Tamanho máximo para upload - 10mb<br>
+                                    Tipo do arquivo: .pdf ou .doc
+                                </label>
+                            </div>
+                        </div>   
+                    </div>
+                    <div id="boxEnviar">
+                        <input id="btnEnviar" type="submit" value="Enviar">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="escopoRight">
+            <img src="foto.png" id="foto">
+            <div class="background"></div>
+        </div>
+    </div>
+    <div class="toolbar">
+        <img src="logo.jpg" id="logo">
+        <a class="toolbar_obj" href="">Sobre</a>
+        <a class="toolbar_obj" href="">Vídeo</a>
+        <a class="toolbar_obj" href="">Propósito</a>
+        <a class="toolbar_obj" href="">Diversidade</a>
+        <a class="toolbar_obj" href="">Valores</a>
+        <a class="toolbar_obj" href="">Área de Atuação</a>
+        <a class="toolbar_obj" href="">Depoimentos</a>
+        <a class="toolbar_obj" href="">Vagas</a>
+
+        
+    </div>
+    <div class="downbar">
+        <img src="logo.jpg" id="logo" style="height: 33px; width: 131px;">
+        <label class="title1" style="font-size: 11px; color: white;">Copyright©</label>
+    </div>
+    <script src="Frontend.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+    <script type="text/javascript">
+        $("#cep").mask("00000-000");
+        $("#numero").mask("00000");
+    </script>
+</body>
+</html>

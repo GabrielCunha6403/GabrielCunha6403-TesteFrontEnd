@@ -1,0 +1,215 @@
+@font-face {
+    src: url("../fonts_front/PTF55F.ttf");
+    font-family: 'ptf5';
+}
+@font-face {
+    src: url("../fonts_front/Oswald-Regular_0.ttf");
+    font-family: 'osw';
+}
+body{
+    display: block;
+    flex-direction: column;
+}
+span{
+    display: none;
+    font-family: ptf5;
+    font-size: 10px;
+    font-weight: 700;
+    color: red;
+    text-align: center;
+}
+.toolbar{
+    display: flex;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 60px;
+    width: 100%;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: #0079C1;
+}
+.downbar{
+    display: flex;
+    position: absolute;
+    left: 0px;
+    height: 60px;
+    width: 100%;
+
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: #0079C1;
+}
+.toolbar_obj{
+    margin-left: 30px;
+    font-size:  22px;
+    text-align: center;
+
+    font-weight: normal;
+    text-decoration: none;
+    font-family: osw;
+    color: white;
+    transition: .2s;
+}
+.escopo{
+    top: 52px;
+    left: 50%;
+    margin-left: -570px;
+    padding-top: 50px;
+    padding-left: 97px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 100%;
+    width: 1043px;
+
+}
+.escopoLeft{
+    width: 490px;
+    display: flex;
+    flex-direction: column;
+}
+.escopoRight{
+    flex-direction: column;
+}
+.background{
+    height: 1590px;
+    width: 290px;
+    background-color: #314163;
+    margin-left: 160px;
+    margin-top: 75px;
+}
+.title1{
+    font-family: osw;
+    font-size:  22px;
+    color: #314163;
+    text-decoration: none;
+    justify-content: center;
+}
+.title2{
+    font-family: osw;
+    font-size: 50px;
+    color: #314163;
+    transition: 0;
+}
+.title3{
+    font-family: osw;
+    font-size: 35px;
+    color: #314163;
+}
+.title4{
+    font-family: ptf5;
+    font-size: 19px;
+    color: #314163;
+}
+.title5{
+    font-family: osw;
+    font-size: 26px;
+    color: #314163;
+}
+.title6{
+    font-family: osw;
+    font-size: 14px;
+    font-weight: 300px;
+    color: #314163;
+    padding-left: 10px;
+    padding-right: 60px;
+    line-height: 17px;
+    margin-top: -5px;
+}
+.moldura{
+    height: 827px;
+    width: 490px;
+    background-color: #E8F8FF;
+    margin-bottom: 100px;
+    justify-content: center;
+    display: block;
+}
+.credenciais{
+    margin-top: 15px;
+    margin-left: 15px;
+    height: 712px;
+    width: 457px;
+    border: 1px solid #314163;
+}
+.credencial{
+    display: flex;
+    flex-direction: column;
+}
+.input1{
+    height: 33px;
+    background-color: transparent;
+    border: 1px solid #314163;
+    border-radius: 5px;
+    font-size: 20px;
+}
+#iptFile{
+    display: none;
+}
+#btnFile{
+    font-family: osw;
+    font-size: 20px;
+    height: 40px;
+    width: 165px;
+
+    color: white;
+    background-color: #4A85AF;
+
+    border: 0;
+    transition: .2s;
+}
+#logo{
+    height: 50px;
+    width: 200px;
+    margin-right: 60px;
+}
+#foto{
+    height: 390px;
+    width: 390px;
+    position: absolute;
+    padding-top: 490px;
+    padding-left: 61px;
+}
+#btnEnviar{
+    height: 40px;
+    width: 165px;
+    margin-top: 30px;
+    margin-right: -278px;
+
+    font-family: osw;
+    font-size: 20px;
+
+    background-color: #314163;
+    color: white;
+    border: none;
+    transition: .2s;
+}
+#boxEnviar{
+    padding-left: 15px;
+    display: flex;
+    justify-content: center;   
+}
+.toolbar_obj:hover{
+    border-bottom: 3px solid white;
+}
+#btnVoltar:hover{
+    text-decoration: underline;
+}
+#btnFile:hover{
+    border: 1px solid #4A85AF;
+    background-color: white;
+    color: #4A85AF;
+    cursor: pointer;
+}
+#btnEnviar:hover{
+    border: 1px solid #314163;
+    background-color: white;
+    color: #314163;
+    cursor: pointer;
+}
+label:hover{
+    cursor: text;
+}
